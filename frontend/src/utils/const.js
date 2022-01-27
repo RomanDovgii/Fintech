@@ -37,3 +37,38 @@ export const VISUALLY_HIDDEN = `
     clip-path: inset(50%);
     margin: -1px;
 `;
+
+export const ActionType = {
+    REDIRECT_TO_ROUTE: `REDIRECT_TO_ROUTE`
+};
+
+export const HttpCode = {
+    UNAUTHORIZED: 401
+};
+
+export const AuthorizationStatus = {
+    AUTH: true,
+    NO_AUTH: false
+};
+
+export const ApiInformation = {
+    BASE_URL: `https://heroku-hackathon.herokuapp.com/api`,
+    TIMEOUT: 5000,
+    WITH_CREDENTIALS: true
+}
+
+export const ApiRoutes = {
+    CARDS: `/cards`,
+    TIPS: `/tips`,
+    LOGIN: `/user/login`,
+    REGISTRATION: `/user/registration`,
+    AUTH: `/user/auth`,
+    USER: `/user`,
+    CLIENT: `/client`,
+};
+
+export const NameSpace = {
+    DATA: `DATA`,
+    STATE: `STATE`,
+    USER: `USER`
+};

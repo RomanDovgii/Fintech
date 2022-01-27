@@ -7,3 +7,11 @@ export const hideCardNumber = (cardNumber) => {
     }, ``);
     return(newNumber);
 };
+
+export const extend = (firstObject, secondObject) => {
+    return Object.assign({}, firstObject, secondObject);
+};
+
+export const copyArray = (array) => {
+    return [...array];
+};
