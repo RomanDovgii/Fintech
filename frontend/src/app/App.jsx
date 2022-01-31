@@ -21,7 +21,7 @@ function App() {
         <Route
           exact
           path={AppRoute.MAIN}
-          render={({history}) => (
+          element = {
             <React.Fragment>
               <Header
                 isMain={true}
@@ -29,7 +29,7 @@ function App() {
               <Main/>
               <Navigation/>
             </React.Fragment>
-          )}
+          }
         />
         <Route
           exact
@@ -41,64 +41,64 @@ function App() {
         <Route
           exact
           path={AppRoute.SIGN_UP}
-          render={({history}) => (
+          element = {
             <SignUp/>
-          )}
+          }
         />
         <Route
           exact
           path={AppRoute.PROFILE_EDIT}
-          render={({history}) => (
+          element = {
             <React.Fragment>
               <Header/>
               <ProfileEdit/>
               <Navigation></Navigation>
             </React.Fragment>
-          )}
+          }
         />
         <Route
           exact
           path={AppRoute.ADD_CARD}
-          render={({history}) => (
+          element = {
             <React.Fragment>
               <Header/>
               <AddCard/>
               <Navigation></Navigation>
             </React.Fragment>
-          )}
+          }
         />
         <Route
           exact
           path={AppRoute.RECEIVE}
-          render={({history}) => (
+          element = {
             <React.Fragment>
               <Header/>
               <Receive/>
               <Navigation></Navigation>
             </React.Fragment>
-          )}
+          }
         />
         <Route
           exact
           path={AppRoute.WITHDRAW}
-          render={({history}) => (
+          element = {
             <React.Fragment>
               <Header/>
               <Withdraw/>
               <Navigation></Navigation>
             </React.Fragment> 
-          )}
+          }
         />
         <Route
           exact
           path={AppRoute.HISTORY}
-          render={({history}) => (
+          element = {
             <React.Fragment>
               <Header/>
               <History/>
               <Navigation></Navigation>
             </React.Fragment>
-          )}
+          }
         />
       </Routes>
     </BrowserRouter>

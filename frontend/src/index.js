@@ -9,9 +9,9 @@ import thunk from 'redux-thunk';
 import rootReducer from './store/reducers/root-reducer';
 import {requireAuthorization} from './store/actions/action';
 import {composeWithDevTools} from 'redux-devtools-extension';
-import {redirect} from "./store/middlewares/redirect";
+// import {redirect} from "./store/middlewares/redirect";
 import {Provider} from 'react-redux';
-import {checkAuth} from "./store/actions/api-actions";
+// import {checkAuth} from "./store/actions/api-actions";
 
 
 const api = createAPI(
@@ -26,10 +26,10 @@ const store = createStore(
   )
 );
 
-Promise.all([
-  store.dispatch(checkAuth())
-])
-.then(() => {
+// Promise.all([
+//   // store.dispatch(checkAuth())
+// ])
+// .then(() => {
   ReactDOM.render(
     <Provider store={store}>
       <StyledGlobal/>
@@ -37,7 +37,7 @@ Promise.all([
     </Provider>,
     document.querySelector('#root')
   );
-})
-.catch((err) => {
-  throw err;
-});
+// })
+// .catch((err) => {
+//   throw err;
+// });
